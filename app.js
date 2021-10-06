@@ -155,3 +155,26 @@
 //     return count
 // }
 
+
+//=================================================//
+//============== All Longest Strings ==============//
+//=================================================//
+
+// Given an array of strings, return another array containing all of its longest strings.
+
+// Solution: 
+
+// function allLongestStrings(inputArray) {
+//     let longest = [];
+//     for(string of inputArray){
+//         if(longest.length === 0){
+//             longest.push(string)
+//         } else if(longest.length > 0 && longest[0].length < string.length){
+//             longest = [];
+//             longest.push(string)
+//         } else if(longest[0].length === string.length){
+//             longest.push(string)
+//         }
+//     }
+//     return longest
+// }

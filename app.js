@@ -155,6 +155,20 @@
 //     return count
 // }
 
+// OR
+
+// function matrixElements(matrix) {
+//     const len = matrix[0].length;
+//     return matrix.flat().reduce((sum, val, i, arr) => {
+//         if (i < len || arr[i - len] !== 0) {
+//             return sum + val
+//         }
+//         return sum;
+//     }, 0);
+// }
+
+// Not good for every edge case though ^
+
 
 //=================================================//
 //============== All Longest Strings ==============//
@@ -235,4 +249,39 @@
 //         return false
 //     }
     
+// }
+
+//=================================================//
+//================= Sort by Height ================//
+//=================================================//
+
+
+
+// Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees. People can be very tall!
+
+// Example
+
+// For a = [-1, 150, 190, 170, -1, -1, 160, 180], the output should be
+// sortByHeight(a) = [-1, 150, 160, 170, -1, -1, 180, 190].
+
+// Solution: 
+
+// function sortByHeight(a) {
+//     let people = [];
+//     let newA = a
+//     for(height of newA){
+//         if(height !== -1){
+//             people.push(height)
+//             newA.splice(newA.indexOf(height), 1, "!")
+//         }
+//     }
+//     people.sort((a, b)=>a-b)
+//     let i = 0
+//     for(place of newA){
+//         if(place === "!"){
+//             newA.splice(newA.indexOf(place), 1, people[i])
+//             i += 1
+//         }
+//     }
+//     return newA
 // }

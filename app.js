@@ -360,3 +360,45 @@
 //     solution.push(even, odd)
 //     return solution
 // }
+
+
+
+//=================================================//
+//================== Add Border ===================//
+//=================================================//
+
+
+
+// Given a rectangular matrix of characters, add a border of asterisks(*) to it.
+
+// Example
+
+// For
+
+// picture = ["abc",
+//            "ded"]
+// the output should be
+
+// addBorder(picture) = ["*****",
+//                       "*abc*",
+//                       "*ded*",
+//                       "*****"]
+
+// Solution: 
+
+// function addBorder(picture) {
+//     let newPic = []
+//     for(string of picture){
+//         let newStr = newPic.push("*" + string + "*")
+//     }
+//     let length = newPic[0].length
+//     let border = ""
+//     for (let i = 0; i < length; i++){
+//         border += "*"
+//     }
+//     newPic.push(border)
+//     newPic.unshift(border)
+
+//     return newPic
+// }
+

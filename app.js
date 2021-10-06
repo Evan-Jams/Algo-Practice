@@ -125,3 +125,33 @@
 //   }
 //   return true
 // }
+
+//=================================================//
+//============== Matrix Elements Sum ==============//
+//=================================================//
+
+// Posted on linkedIn
+
+// Given matrix, a rectangular matrix of integers, where each value represents the cost of the room, your task is to return the total sum of all rooms that are suitable for the CodeBots (ie: add up all the values that don't appear below a 0).
+
+// Solution:
+
+// function matrixElementsSum(matrix) {
+//     let columnsOfZero = []
+//     let y = 0
+//     let count = 0
+//     for(array of matrix){
+//         for(elem of array){
+//            if(elem === 0){
+//                columnsOfZero.push(y)
+//            } else if (elem !== 0 && !columnsOfZero.includes(y)){
+//                count += elem
+//            }
+//            y+=1
+//         }
+//         y = 0
+//     }
+        
+//     return count
+// }
+
